@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="/update" method="post">
+
+        <div class="form-group row">
+          <label class="col-4 col-form-label" for="patient_id">patient_id</label> 
+          <div class="col-8">
+            <input id="patient_id" name="patient_id" placeholder="enter patient_id" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-4 col-form-label">Name</label> 
+          <div class="col-8">
+            <input id="name" name="name" placeholder="Enter your name " type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="patient_age" class="col-4 col-form-label">Patient_age</label> 
+          <div class="col-8">
+            <input id="patient_age" name="patient_age" placeholder="Enter patient_age" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="gender" class="col-4 col-form-label">Gender</label> 
+          <div class="col-8">
+            <input id="gender" name="gender" placeholder="Select gender" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="select" class="col-4 col-form-label">Select</label> 
+          <div class="col-8">
+            <select id="select" name="select" class="custom-select" multiple="multiple">
+              <option value="woman">woman</option>
+              <option value="men">men</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="phone" class="col-4 col-form-label">Phone</label> 
+          <div class="col-8">
+            <input id="phone" name="phone" placeholder="Enter phone number " type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="adress" class="col-4 col-form-label">Address</label> 
+          <div class="col-8">
+            <input id="adress" name="adress" placeholder="enter address" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-4 col-form-label">Email</label> 
+          <div class="col-8">
+            <input id="email" name="email" placeholder="enter email" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="medical_history" class="col-4 col-form-label">Medical_history</label> 
+          <div class="col-8">
+            <input id="medical_history" name="medical_history" placeholder="enter medical_history" type="text" class="form-control">
+          </div>
+        </div> 
+        <div class="form-group row">
+          <div class="offset-4 col-8">
+            <button name="submit" type="submit" class="btn btn-primary">Update</button>
+          </div>
+        </div>
+      </form>
+
+
+      <h2>appointment</h2>
+      <form action="/update" method="post">
+        <div class="form-group row">
+          <label for="appo_id" class="col-4 col-form-label">Appo_id</label> 
+          <div class="col-8">
+            <input id="appo_id" name="appo_id" placeholder="enter appo_id" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="patient_id" class="col-4 col-form-label">Patient_id</label> 
+          <div class="col-8">
+            <input id="patient_id" name="patient_id" placeholder="enter patient_id" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="doc_id" class="col-4 col-form-label">Doc_id</label> 
+          <div class="col-8">
+            <input id="doc_id" name="doc_id" placeholder="enter doc_id" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="booked_date" class="col-4 col-form-label">Booked_date</label> 
+          <div class="col-8">
+            <input id="booked_date" name="booked_date" placeholder="enrer booked_date" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="slot" class="col-4 col-form-label">Slot</label> 
+          <div class="col-8">
+            <input id="slot" name="slot" placeholder="enter slot" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="patient_desc" class="col-4 col-form-label">Patient_desc</label> 
+          <div class="col-8">
+            <textarea id="patient_desc" name="patient_desc" cols="40" rows="5" class="form-control" required="required"></textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="prescription" class="col-4 col-form-label">Prescription</label> 
+          <div class="col-8">
+            <textarea id="prescription" name="prescription" cols="40" rows="5" class="form-control" required="required"></textarea>
+          </div>
+        </div> 
+        <div class="form-group row">
+          <div class="offset-4 col-8">
+            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+
+      <h2>Update Doctor</h2>
+      <form action="/update" method="post">
+        <div class="form-group row">
+          <label for="doctor_id" class="col-4 col-form-label">Doctor_id</label> 
+          <div class="col-8">
+            <input id="doctor_id" name="doctor_id" placeholder="enter doctor_id" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-4 col-form-label">Name</label> 
+          <div class="col-8">
+            <input id="name" name="name" placeholder="Enter doctor name" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="phone" class="col-4 col-form-label">Phone</label> 
+          <div class="col-8">
+            <input id="phone" name="phone" placeholder="enter phone number" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-4 col-form-label">Email</label> 
+          <div class="col-8">
+            <input id="email" name="email" placeholder="enter the email" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="field" class="col-4 col-form-label">Field</label> 
+          <div class="col-8">
+            <input id="field" name="field" placeholder="enter doctor field" type="text" class="form-control" required="required">
+          </div>
+        </div> 
+        <div class="form-group row">
+          <div class="offset-4 col-8">
+            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+
+      <h2>Slot</h2>
+
+      <form action="/update" method="post">
+        <div class="form-group row">
+          <label for="slot_id" class="col-4 col-form-label">Slot_id</label> 
+          <div class="col-8">
+            <input id="slot_id" name="slot_id" placeholder="enter slot_id" type="text" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="slot_time" class="col-4 col-form-label">Slot_time</label> 
+          <div class="col-8">
+            <input id="slot_time" name="slot_time" placeholder="enter slot_time" type="text" class="form-control" required="required">
+          </div>
+        </div> 
+        <div class="form-group row">
+          <div class="offset-4 col-8">
+            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+</body>
+</html>
